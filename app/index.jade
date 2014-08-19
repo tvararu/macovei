@@ -1,5 +1,5 @@
 doctype html
-html(lang="en", manifest="app.manifest")
+html(lang="en")
   head
     meta(charset="utf-8")
     meta(name="fragment", content="!")
@@ -10,8 +10,9 @@ html(lang="en", manifest="app.manifest")
     link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap.css')
     link(rel='stylesheet', href='bower_components/fontawesome/css/font-awesome.css')
     // endbower
-    link(rel='stylesheet', href='bower_components/ShapeHoverEffectSVG/css/component.css')
+    //- link(rel='stylesheet', href='bower_components/ShapeHoverEffectSVG/css/component.css')
     link(rel="stylesheet", href="css/main.css")
+    script(src="js/lib/modernizr.custom.js")
     // endbuild
   body
     // build:js({app,.tmp,dist}) js/main.js
@@ -20,5 +21,8 @@ html(lang="en", manifest="app.manifest")
     script(src='bower_components/bootstrap/dist/js/bootstrap.js')
     // endbower
     script(src='bower_components/ShapeHoverEffectSVG/js/snap.svg-min.js')
+    script(src="js/lib/classie.js")
+    script(src="js/lib/helper.js")
+    script(src="js/lib/grid3d.js")
     script(src="js/main.js")
     // endbuild

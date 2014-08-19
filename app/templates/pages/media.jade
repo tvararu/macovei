@@ -1,19 +1,30 @@
 .container
   h1 Media
 
-  - var giffys = ['LongFlimsyFirecrest', 'LongFlimsyFirecrest', 'LongFlimsyFirecrest', 'LongFlimsyFirecrest', 'LongFlimsyFirecrest', 'LongFlimsyFirecrest', 'LongFlimsyFirecrest', 'LongFlimsyFirecrest', 'LongFlimsyFirecrest', 'LongFlimsyFirecrest', 'LongFlimsyFirecrest', 'LongFlimsyFirecrest', 'LongFlimsyFirecrest', 'LongFlimsyFirecrest', 'LongFlimsyFirecrest', 'LongFlimsyFirecrest'];
-  - var giffys = ['LongFlimsyFirecrest'];
+  //- - var giffys = ['LongFlimsyFirecrest', 'LongFlimsyFirecrest', 'LongFlimsyFirecrest', 'LongFlimsyFirecrest', 'LongFlimsyFirecrest', 'LongFlimsyFirecrest', 'LongFlimsyFirecrest', 'LongFlimsyFirecrest', 'LongFlimsyFirecrest', 'LongFlimsyFirecrest', 'LongFlimsyFirecrest', 'LongFlimsyFirecrest', 'LongFlimsyFirecrest', 'LongFlimsyFirecrest', 'LongFlimsyFirecrest', 'LongFlimsyFirecrest'];
+  //- - var giffys = ['LongFlimsyFirecrest'];
+  //-
+  //- //- Uses classes and structure from the ShapeHoverEffectSVG Codrops lib.
+  //- //- Kind of ugly, but functional.
+  //- .demo-3: section.grid.clearfix
+  //-   each gfy in giffys
+  //-     a(href="#", data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z")
+  //-       figure
+  //-         iframe(src="http://gfycat.com/ifr/#{gfy}", frameborder="0", scrolling="no", width="800", height="480", style="-webkit-backface-visibility: hidden;")
+  //-         svg(viewBox="0 0 180 320", preserveAspectRatio="none")
+  //-           path(d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z ")
+  //-         figcaption
+  //-           h2 Monica Macovei
+  //-           p Declarații, informații, click pentru video.
+  //-           button Vizualizare
 
-  //- Uses classes and structure from the ShapeHoverEffectSVG Codrops lib.
-  //- Kind of ugly, but functional.
-  .demo-3: section.grid.clearfix
-    each gfy in giffys
-      a(href="#", data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z")
+  section#grid3d.grid3d.horizontal
+    .grid-wrap
+      .grid
         figure
-          iframe(src="http://gfycat.com/ifr/#{gfy}", frameborder="0", scrolling="no", width="800", height="480", style="-webkit-backface-visibility: hidden;")
-          svg(viewBox="0 0 180 320", preserveAspectRatio="none")
-            path(d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z ")
-          figcaption
-            h2 Monica Macovei
-            p Declarații, informații, click pentru video.
-            button Vizualizare
+          img(src='http://placehold.it/400x400')
+    .content
+      div
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      span.loading
+      span.icon.close-content: i.fa.fa-fw.fa-times
